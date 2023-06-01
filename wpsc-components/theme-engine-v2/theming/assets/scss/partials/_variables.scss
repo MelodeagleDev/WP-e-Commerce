@@ -1,0 +1,58 @@
+// /*******************
+// Variables
+// *******************/
+
+// /* Typography */
+$bold: 600;
+$base-font: 16px;
+$title-size-col-2: 1.75em;
+$title-size-col-3: 1.35em;
+$title-size-col-4: 1.25em;
+$title-size-col-5: 1.15em;
+$title-size-col-6: 1.05em;
+$price-size-col-2: 1.25em;
+$price-size-col-3: 1em;
+$price-size-col-4: 0.9em;
+$price-size-col-5: 0.85em;
+$price-size-col-6: 0.8em;
+$sml-size-col-2: 0.85em;
+$sml-size-col-3: 0.8em;
+$sml-size-col-4: 0.7em;
+$sml-size-col-5: 0.65em;
+$sml-size-col-6: 0.6em;
+
+// /* Shopping Cart Single Product Cells (Needs to add up to 100%) */
+$cell_margin: 2.5%; /* value x 4 i.e. 2.5 x 4 = 10% */
+$cart_image_width: 20%;
+$cart_items_width: 34%;
+$cart_unit-price_width: 12%;
+$cart_quantity_width: 12%;
+$cart_item-total_width: 12%;
+
+$cart_border: 1px solid #ccc;
+
+// /* Account Orders (Needs to add up to 100%) */
+$account_id_width: 10%;
+$account_date_width: 20%;
+$account_status_width: 20%;
+$account_tracking_width: 30%;
+$account_total_width: 10%;
+
+// /* Digital Orders (Needs to add up to 100%) */
+$digital_product_width: 35%;
+$digital_content_width: 60%;
+$digital_margin: 5%;
+
+// /* Product Grid */
+$grid_margin: 2.5%;
+$columns-2: 50% - $grid_margin;
+$columns-3: 33.333% - $grid_margin;
+$columns-4: 25% - $grid_margin;
+$columns-5: 20% - $grid_margin;
+$columns-6: 16.666% - $grid_margin;
+$full-width: 100%;
+
+// /* Product Form */
+$toggle-width: 35px;
+$qty-width: 40px;
+$qty-btn-width: ($toggle-width * 2) + $qty-width;

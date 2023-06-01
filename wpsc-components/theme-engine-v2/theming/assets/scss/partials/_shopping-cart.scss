@@ -1,0 +1,115 @@
+/*******************
+Shopping Cart
+********************/
+
+.wpsc-cart-table {
+	width: 100%;
+}
+.wpsc-cart-item,
+.wpsc-row,
+.wpsc-cart-footer {
+	@include wpsc-cart-item();
+}
+.wpsc-cart-header {
+	border-top: $cart_border;
+}
+.wpsc-cart-cell-header {
+    font-size: 12px;
+    font-weight: $bold;
+}
+.wpsc-cart-cell,
+.wpsc-cart-cell-header  {
+    display: inline-block;
+    margin-right: $cell_margin;
+}
+.wpsc-cart-cell:last-of-type, .wpsc-cart-cell-header:last-of-type {
+    margin-right: 0;
+}
+.wpsc-form-actions {
+	@include flexbox();
+	@include justify-content(flex-end);
+	@include align-items(center);
+}
+.express-checkout-button,
+.wpsc-begin-checkout {
+	display: inline-block;
+    vertical-align: bottom;
+    box-shadow: none !important; //needed to override .entry-content a
+}
+.express-checkout-button {
+	border-bottom: none !important;
+}
+.paypal-express-separator {
+	margin: 0 0.5em;
+}
+
+/* Single Product Row */
+.wpsc-cart-cell.image {
+    width: $cart_image_width;
+}
+.wpsc-cart-cell.items {
+    width: $cart_items_width;
+}
+.wpsc-cart-cell.unit-price  {
+    width: $cart_unit-price_width;
+}
+.wpsc-cart-cell.quantity {
+    width: $cart_quantity_width;
+}
+.wpsc-cart-quantity-input {
+	width: 100%;
+}
+.wpsc-cart-cell.item-total {
+    width: $cart_item-total_width;
+}
+/* Product Headers */
+.wpsc-cart-cell-header.image {
+	@extend .wpsc-cart-cell.image;
+}
+.wpsc-cart-cell-header.items {
+	@extend .wpsc-cart-cell.items;
+}
+.wpsc-cart-cell-header.unit-price {
+	@extend .wpsc-cart-cell.unit-price;
+}
+.wpsc-cart-cell-header.quantity {
+	@extend .wpsc-cart-cell.quantity;
+}
+.wpsc-cart-cell-header.item-total {
+	@extend .wpsc-cart-cell.item-total;
+}
+
+/* Cart Footer */
+.wpsc-cart-footer {
+	.wpsc-cart-cell,
+	.wpsc-cart-aggregate {
+		text-align: right;
+		margin-right: 0;
+	}
+	.wpsc-row {
+		border: 0;
+		padding: 0;
+	}
+	.wpsc-cart-actions-row {
+	    text-align: justify;
+	    padding-bottom: 0;
+    }
+    .wpsc-cart-actions-row:after {
+    	content: '';
+	    display: inline-block;
+	    width: 100%;
+	    height: 0;
+    }
+	.apply-coupon {
+		vertical-align: top;
+		text-align: left;	
+	}
+	.update-quantity {
+	    text-align: right;
+	}
+}
+
+/* Sidebar Cart */
+.widget {
+	@import 'mobile-and-sidebar';
+}
